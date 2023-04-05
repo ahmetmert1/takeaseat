@@ -14,7 +14,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
        
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        self.window = UIWindow(windowScene: windowScene)
+        
+        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateViewController(withIdentifier:  "LaunchScreen")
+        window?.makeKeyAndVisible()
+        
+        if !TakeASeatSingleton.shared.isOnboardingCompleted {
+            //Onboarding is not completed. Show onboarding page
+            
+            let onboardingVC = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier:  "OnboardingViewController") as! OnboardingViewController
+            window?.rootViewController = onboardingVC
+            
+            
+        } else {
+            
+        }
+        
+        
         
         
     }

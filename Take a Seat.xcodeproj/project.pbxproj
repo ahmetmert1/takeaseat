@@ -12,6 +12,14 @@
 		C460724929DCC43900789883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460724729DCC43900789883 /* Main.storyboard */; };
 		C460724B29DCC43C00789883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C460724A29DCC43C00789883 /* Assets.xcassets */; };
 		C460724E29DCC43C00789883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460724C29DCC43C00789883 /* LaunchScreen.storyboard */; };
+		C4B45D7129DDFEEC00CC003A /* TakeASeatSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D7029DDFEEC00CC003A /* TakeASeatSingleton.swift */; };
+		C4B45D7329DE00E700CC003A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D7229DE00E700CC003A /* OnboardingViewController.swift */; };
+		C4B45D7B29DE0A4E00CC003A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D7929DE0A4E00CC003A /* OnboardingCollectionViewCell.swift */; };
+		C4B45D7C29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B45D7A29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib */; };
+		C4B45D7E29DE0CA800CC003A /* OnboardingCVCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D7D29DE0CA800CC003A /* OnboardingCVCellModel.swift */; };
+		C4B45D8029DE185200CC003A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B45D7F29DE185200CC003A /* Home.storyboard */; };
+		C4B45D8429DE187200CC003A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8329DE187200CC003A /* HomeViewController.swift */; };
+		C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8529DE1A5F00CC003A /* OnboardingPromptModel.swift */; };
 		C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C473D829DDDDB100C403A2 /* Onboarding.storyboard */; };
 		C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D70C8329DCD49600CDEC19 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +32,14 @@
 		C460724A29DCC43C00789883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C460724D29DCC43C00789883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C460724F29DCC43C00789883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B45D7029DDFEEC00CC003A /* TakeASeatSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeASeatSingleton.swift; sourceTree = "<group>"; };
+		C4B45D7229DE00E700CC003A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C4B45D7929DE0A4E00CC003A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4B45D7A29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		C4B45D7D29DE0CA800CC003A /* OnboardingCVCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCVCellModel.swift; sourceTree = "<group>"; };
+		C4B45D7F29DE185200CC003A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C4B45D8329DE187200CC003A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C4B45D8529DE1A5F00CC003A /* OnboardingPromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPromptModel.swift; sourceTree = "<group>"; };
 		C4C473D829DDDDB100C403A2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		C4D70C8329DCD49600CDEC19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +83,16 @@
 			path = takeaseat;
 			sourceTree = "<group>";
 		};
+		C4B45D7429DE0A0A00CC003A /* OnboardingCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4B45D7929DE0A4E00CC003A /* OnboardingCollectionViewCell.swift */,
+				C4B45D7A29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib */,
+				C4B45D7D29DE0CA800CC003A /* OnboardingCVCellModel.swift */,
+			);
+			path = OnboardingCVCell;
+			sourceTree = "<group>";
+		};
 		C4C473D329DDDA2F00C403A2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +116,10 @@
 		C4C473D529DDDA4900C403A2 /* Onboarding Screen */ = {
 			isa = PBXGroup;
 			children = (
+				C4B45D7429DE0A0A00CC003A /* OnboardingCVCell */,
 				C4C473D829DDDDB100C403A2 /* Onboarding.storyboard */,
+				C4B45D7229DE00E700CC003A /* OnboardingViewController.swift */,
+				C4B45D8529DE1A5F00CC003A /* OnboardingPromptModel.swift */,
 			);
 			path = "Onboarding Screen";
 			sourceTree = "<group>";
@@ -98,6 +127,8 @@
 		C4C473D629DDDA5C00C403A2 /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
+				C4B45D7F29DE185200CC003A /* Home.storyboard */,
+				C4B45D8329DE187200CC003A /* HomeViewController.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -106,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				C4D70C8329DCD49600CDEC19 /* Constants.swift */,
+				C4B45D7029DDFEEC00CC003A /* TakeASeatSingleton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -171,7 +203,9 @@
 				C460724E29DCC43C00789883 /* LaunchScreen.storyboard in Resources */,
 				C460724B29DCC43C00789883 /* Assets.xcassets in Resources */,
 				C460724929DCC43900789883 /* Main.storyboard in Resources */,
+				C4B45D8029DE185200CC003A /* Home.storyboard in Resources */,
 				C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */,
+				C4B45D7C29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C460724229DCC43900789883 /* AppDelegate.swift in Sources */,
+				C4B45D7129DDFEEC00CC003A /* TakeASeatSingleton.swift in Sources */,
+				C4B45D7329DE00E700CC003A /* OnboardingViewController.swift in Sources */,
+				C4B45D8429DE187200CC003A /* HomeViewController.swift in Sources */,
 				C460724429DCC43900789883 /* SceneDelegate.swift in Sources */,
+				C4B45D7E29DE0CA800CC003A /* OnboardingCVCellModel.swift in Sources */,
+				C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */,
 				C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */,
+				C4B45D7B29DE0A4E00CC003A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
