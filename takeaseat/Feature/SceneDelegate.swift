@@ -26,10 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             let onboardingVC = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier:  "OnboardingViewController") as! OnboardingViewController
             window?.rootViewController = onboardingVC
-            
-            
         } else {
-            
+            let homeVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier:  "HomeViewController") as! HomeViewController
+            window?.rootViewController = homeVC
         }
         
         

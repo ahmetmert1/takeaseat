@@ -20,6 +20,10 @@
 		C4B45D8029DE185200CC003A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B45D7F29DE185200CC003A /* Home.storyboard */; };
 		C4B45D8429DE187200CC003A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8329DE187200CC003A /* HomeViewController.swift */; };
 		C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8529DE1A5F00CC003A /* OnboardingPromptModel.swift */; };
+		C4B45D8929DE9EC200CC003A /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8829DE9EC200CC003A /* TicketModel.swift */; };
+		C4B45D8B29DE9F0F00CC003A /* PassengerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */; };
+		C4B45D8D29DE9F2000CC003A /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8C29DE9F2000CC003A /* DateModel.swift */; };
+		C4B45D8F29DE9F3F00CC003A /* HourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8E29DE9F3F00CC003A /* HourModel.swift */; };
 		C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C473D829DDDDB100C403A2 /* Onboarding.storyboard */; };
 		C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D70C8329DCD49600CDEC19 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +44,10 @@
 		C4B45D7F29DE185200CC003A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C4B45D8329DE187200CC003A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4B45D8529DE1A5F00CC003A /* OnboardingPromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPromptModel.swift; sourceTree = "<group>"; };
+		C4B45D8829DE9EC200CC003A /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerModel.swift; sourceTree = "<group>"; };
+		C4B45D8C29DE9F2000CC003A /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		C4B45D8E29DE9F3F00CC003A /* HourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourModel.swift; sourceTree = "<group>"; };
 		C4C473D829DDDDB100C403A2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		C4D70C8329DCD49600CDEC19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,9 +101,21 @@
 			path = OnboardingCVCell;
 			sourceTree = "<group>";
 		};
+		C4B45D8729DE9EAF00CC003A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4B45D8829DE9EC200CC003A /* TicketModel.swift */,
+				C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */,
+				C4B45D8C29DE9F2000CC003A /* DateModel.swift */,
+				C4B45D8E29DE9F3F00CC003A /* HourModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C4C473D329DDDA2F00C403A2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C4B45D8729DE9EAF00CC003A /* Models */,
 				C460724129DCC43900789883 /* AppDelegate.swift */,
 				C460724329DCC43900789883 /* SceneDelegate.swift */,
 				C4C473D629DDDA5C00C403A2 /* Home Screen */,
@@ -217,12 +237,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C460724229DCC43900789883 /* AppDelegate.swift in Sources */,
+				C4B45D8F29DE9F3F00CC003A /* HourModel.swift in Sources */,
 				C4B45D7129DDFEEC00CC003A /* TakeASeatSingleton.swift in Sources */,
 				C4B45D7329DE00E700CC003A /* OnboardingViewController.swift in Sources */,
 				C4B45D8429DE187200CC003A /* HomeViewController.swift in Sources */,
 				C460724429DCC43900789883 /* SceneDelegate.swift in Sources */,
+				C4B45D8D29DE9F2000CC003A /* DateModel.swift in Sources */,
 				C4B45D7E29DE0CA800CC003A /* OnboardingCVCellModel.swift in Sources */,
+				C4B45D8B29DE9F0F00CC003A /* PassengerModel.swift in Sources */,
 				C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */,
+				C4B45D8929DE9EC200CC003A /* TicketModel.swift in Sources */,
 				C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */,
 				C4B45D7B29DE0A4E00CC003A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
