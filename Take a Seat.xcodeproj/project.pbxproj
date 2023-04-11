@@ -3,15 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754DC312283989E2B5783BA4 /* Pods_Take_a_Seat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C0A5070A051315A09F1A9D /* Pods_Take_a_Seat.framework */; };
 		C460724229DCC43900789883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724129DCC43900789883 /* AppDelegate.swift */; };
 		C460724429DCC43900789883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724329DCC43900789883 /* SceneDelegate.swift */; };
 		C460724929DCC43900789883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460724729DCC43900789883 /* Main.storyboard */; };
 		C460724B29DCC43C00789883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C460724A29DCC43C00789883 /* Assets.xcassets */; };
 		C460724E29DCC43C00789883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460724C29DCC43C00789883 /* LaunchScreen.storyboard */; };
+		C4A9001929E59894007829DA /* SelectSeat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A9001829E59894007829DA /* SelectSeat.storyboard */; };
+		C4A9001B29E598A6007829DA /* SelectSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9001A29E598A6007829DA /* SelectSeatViewController.swift */; };
+		C4A9001D29E5A365007829DA /* MockSeatCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9001C29E5A365007829DA /* MockSeatCreater.swift */; };
+		C4A9001F29E5A391007829DA /* ExampleSeatConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9001E29E5A391007829DA /* ExampleSeatConfig.swift */; };
+		C4A9002129E5A3AE007829DA /* SeatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9002029E5A3AE007829DA /* SeatDataManager.swift */; };
 		C4B45D7129DDFEEC00CC003A /* TakeASeatSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D7029DDFEEC00CC003A /* TakeASeatSingleton.swift */; };
 		C4B45D7329DE00E700CC003A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D7229DE00E700CC003A /* OnboardingViewController.swift */; };
 		C4B45D7B29DE0A4E00CC003A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D7929DE0A4E00CC003A /* OnboardingCollectionViewCell.swift */; };
@@ -24,11 +30,18 @@
 		C4B45D8B29DE9F0F00CC003A /* PassengerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */; };
 		C4B45D8D29DE9F2000CC003A /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8C29DE9F2000CC003A /* DateModel.swift */; };
 		C4B45D8F29DE9F3F00CC003A /* HourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8E29DE9F3F00CC003A /* HourModel.swift */; };
+		C4B45D9129DF0E5E00CC003A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D9029DF0E5E00CC003A /* Extensions.swift */; };
+		C4B45D9429E32B6700CC003A /* CompanySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D9329E32B6700CC003A /* CompanySelectViewController.swift */; };
+		C4B45D9629E32B9E00CC003A /* CompanySelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B45D9529E32B9E00CC003A /* CompanySelect.storyboard */; };
+		C4B45D9A29E32EBB00CC003A /* CompanySelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D9829E32EBB00CC003A /* CompanySelectCollectionViewCell.swift */; };
+		C4B45D9B29E32EBB00CC003A /* CompanySelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B45D9929E32EBB00CC003A /* CompanySelectCollectionViewCell.xib */; };
+		C4B45D9D29E3385100CC003A /* CompanySelectCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D9C29E3385100CC003A /* CompanySelectCellModel.swift */; };
 		C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C473D829DDDDB100C403A2 /* Onboarding.storyboard */; };
 		C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D70C8329DCD49600CDEC19 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632BC94768393DC392AE16DE /* Pods-Take a Seat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take a Seat.debug.xcconfig"; path = "Target Support Files/Pods-Take a Seat/Pods-Take a Seat.debug.xcconfig"; sourceTree = "<group>"; };
 		C460723E29DCC43900789883 /* Take a Seat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take a Seat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C460724129DCC43900789883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C460724329DCC43900789883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +49,11 @@
 		C460724A29DCC43C00789883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C460724D29DCC43C00789883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C460724F29DCC43C00789883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A9001829E59894007829DA /* SelectSeat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectSeat.storyboard; sourceTree = "<group>"; };
+		C4A9001A29E598A6007829DA /* SelectSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatViewController.swift; sourceTree = "<group>"; };
+		C4A9001C29E5A365007829DA /* MockSeatCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSeatCreater.swift; sourceTree = "<group>"; };
+		C4A9001E29E5A391007829DA /* ExampleSeatConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSeatConfig.swift; sourceTree = "<group>"; };
+		C4A9002029E5A3AE007829DA /* SeatDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatDataManager.swift; sourceTree = "<group>"; };
 		C4B45D7029DDFEEC00CC003A /* TakeASeatSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeASeatSingleton.swift; sourceTree = "<group>"; };
 		C4B45D7229DE00E700CC003A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C4B45D7929DE0A4E00CC003A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -48,8 +66,16 @@
 		C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerModel.swift; sourceTree = "<group>"; };
 		C4B45D8C29DE9F2000CC003A /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		C4B45D8E29DE9F3F00CC003A /* HourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourModel.swift; sourceTree = "<group>"; };
+		C4B45D9029DF0E5E00CC003A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C4B45D9329E32B6700CC003A /* CompanySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySelectViewController.swift; sourceTree = "<group>"; };
+		C4B45D9529E32B9E00CC003A /* CompanySelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompanySelect.storyboard; sourceTree = "<group>"; };
+		C4B45D9829E32EBB00CC003A /* CompanySelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4B45D9929E32EBB00CC003A /* CompanySelectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanySelectCollectionViewCell.xib; sourceTree = "<group>"; };
+		C4B45D9C29E3385100CC003A /* CompanySelectCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySelectCellModel.swift; sourceTree = "<group>"; };
 		C4C473D829DDDDB100C403A2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		C4D70C8329DCD49600CDEC19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C69390C87927770EE68AD717 /* Pods-Take a Seat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take a Seat.release.xcconfig"; path = "Target Support Files/Pods-Take a Seat/Pods-Take a Seat.release.xcconfig"; sourceTree = "<group>"; };
+		D0C0A5070A051315A09F1A9D /* Pods_Take_a_Seat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Take_a_Seat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +83,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754DC312283989E2B5783BA4 /* Pods_Take_a_Seat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8FBAE2E80D927980090A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0C0A5070A051315A09F1A9D /* Pods_Take_a_Seat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8390A567D8073FE7118AFEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				632BC94768393DC392AE16DE /* Pods-Take a Seat.debug.xcconfig */,
+				C69390C87927770EE68AD717 /* Pods-Take a Seat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C460723529DCC43900789883 = {
 			isa = PBXGroup;
 			children = (
 				C460724029DCC43900789883 /* takeaseat */,
 				C460723F29DCC43900789883 /* Products */,
+				A8390A567D8073FE7118AFEF /* Pods */,
+				0B8FBAE2E80D927980090A1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +137,18 @@
 			path = takeaseat;
 			sourceTree = "<group>";
 		};
+		C4A9001729E5987F007829DA /* Select Seat Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C4A9001829E59894007829DA /* SelectSeat.storyboard */,
+				C4A9001A29E598A6007829DA /* SelectSeatViewController.swift */,
+				C4A9001C29E5A365007829DA /* MockSeatCreater.swift */,
+				C4A9001E29E5A391007829DA /* ExampleSeatConfig.swift */,
+				C4A9002029E5A3AE007829DA /* SeatDataManager.swift */,
+			);
+			path = "Select Seat Screen";
+			sourceTree = "<group>";
+		};
 		C4B45D7429DE0A0A00CC003A /* OnboardingCVCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +170,34 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C4B45D9229E32AD900CC003A /* CompanySelect Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C4B45D9729E32EA100CC003A /* CompanySelectCell */,
+				C4B45D9329E32B6700CC003A /* CompanySelectViewController.swift */,
+				C4B45D9529E32B9E00CC003A /* CompanySelect.storyboard */,
+			);
+			path = "CompanySelect Screen";
+			sourceTree = "<group>";
+		};
+		C4B45D9729E32EA100CC003A /* CompanySelectCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4B45D9829E32EBB00CC003A /* CompanySelectCollectionViewCell.swift */,
+				C4B45D9929E32EBB00CC003A /* CompanySelectCollectionViewCell.xib */,
+				C4B45D9C29E3385100CC003A /* CompanySelectCellModel.swift */,
+			);
+			path = CompanySelectCell;
+			sourceTree = "<group>";
+		};
 		C4C473D329DDDA2F00C403A2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
 				C4B45D8729DE9EAF00CC003A /* Models */,
 				C460724129DCC43900789883 /* AppDelegate.swift */,
 				C460724329DCC43900789883 /* SceneDelegate.swift */,
+				C4A9001729E5987F007829DA /* Select Seat Screen */,
+				C4B45D9229E32AD900CC003A /* CompanySelect Screen */,
 				C4C473D629DDDA5C00C403A2 /* Home Screen */,
 				C4C473D429DDDA3B00C403A2 /* Launch Screen */,
 				C4C473D529DDDA4900C403A2 /* Onboarding Screen */,
@@ -158,6 +238,7 @@
 			children = (
 				C4D70C8329DCD49600CDEC19 /* Constants.swift */,
 				C4B45D7029DDFEEC00CC003A /* TakeASeatSingleton.swift */,
+				C4B45D9029DF0E5E00CC003A /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -169,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C460725229DCC43C00789883 /* Build configuration list for PBXNativeTarget "Take a Seat" */;
 			buildPhases = (
+				9D698274E9681D6B4BA8025A /* [CP] Check Pods Manifest.lock */,
 				C460723A29DCC43900789883 /* Sources */,
 				C460723B29DCC43900789883 /* Frameworks */,
 				C460723C29DCC43900789883 /* Resources */,
+				B109D2820513174DC9E8B0EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,7 +281,7 @@
 				};
 			};
 			buildConfigurationList = C460723929DCC43900789883 /* Build configuration list for PBXProject "Take a Seat" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -222,6 +305,9 @@
 			files = (
 				C460724E29DCC43C00789883 /* LaunchScreen.storyboard in Resources */,
 				C460724B29DCC43C00789883 /* Assets.xcassets in Resources */,
+				C4A9001929E59894007829DA /* SelectSeat.storyboard in Resources */,
+				C4B45D9B29E32EBB00CC003A /* CompanySelectCollectionViewCell.xib in Resources */,
+				C4B45D9629E32B9E00CC003A /* CompanySelect.storyboard in Resources */,
 				C460724929DCC43900789883 /* Main.storyboard in Resources */,
 				C4B45D8029DE185200CC003A /* Home.storyboard in Resources */,
 				C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */,
@@ -231,24 +317,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D698274E9681D6B4BA8025A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Take a Seat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B109D2820513174DC9E8B0EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Take a Seat/Pods-Take a Seat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Take a Seat/Pods-Take a Seat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Take a Seat/Pods-Take a Seat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C460723A29DCC43900789883 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C460724229DCC43900789883 /* AppDelegate.swift in Sources */,
+				C4A9002129E5A3AE007829DA /* SeatDataManager.swift in Sources */,
+				C4B45D9D29E3385100CC003A /* CompanySelectCellModel.swift in Sources */,
 				C4B45D8F29DE9F3F00CC003A /* HourModel.swift in Sources */,
 				C4B45D7129DDFEEC00CC003A /* TakeASeatSingleton.swift in Sources */,
+				C4B45D9429E32B6700CC003A /* CompanySelectViewController.swift in Sources */,
 				C4B45D7329DE00E700CC003A /* OnboardingViewController.swift in Sources */,
 				C4B45D8429DE187200CC003A /* HomeViewController.swift in Sources */,
 				C460724429DCC43900789883 /* SceneDelegate.swift in Sources */,
 				C4B45D8D29DE9F2000CC003A /* DateModel.swift in Sources */,
+				C4A9001F29E5A391007829DA /* ExampleSeatConfig.swift in Sources */,
+				C4A9001D29E5A365007829DA /* MockSeatCreater.swift in Sources */,
 				C4B45D7E29DE0CA800CC003A /* OnboardingCVCellModel.swift in Sources */,
 				C4B45D8B29DE9F0F00CC003A /* PassengerModel.swift in Sources */,
 				C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */,
 				C4B45D8929DE9EC200CC003A /* TicketModel.swift in Sources */,
 				C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */,
 				C4B45D7B29DE0A4E00CC003A /* OnboardingCollectionViewCell.swift in Sources */,
+				C4B45D9A29E32EBB00CC003A /* CompanySelectCollectionViewCell.swift in Sources */,
+				C4B45D9129DF0E5E00CC003A /* Extensions.swift in Sources */,
+				C4A9001B29E598A6007829DA /* SelectSeatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +526,7 @@
 		};
 		C460725329DCC43C00789883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632BC94768393DC392AE16DE /* Pods-Take a Seat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,6 +555,7 @@
 		};
 		C460725429DCC43C00789883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69390C87927770EE68AD717 /* Pods-Take a Seat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -21,6 +21,9 @@ class TakeASeatSingleton {
         }
     }
     
+    var fromCity = ""
+    var toCity = ""
+    
     
     
 }

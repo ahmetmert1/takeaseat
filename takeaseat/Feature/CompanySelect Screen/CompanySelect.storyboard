@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Company Select View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CompanySelectViewController" id="Y6W-OH-hqX" customClass="CompanySelectViewController" customModule="Take_a_Seat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8I-Kp-UtC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="63.333333333333336"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a Seat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30I-Bb-RLi">
+                                        <rect key="frame" x="153.66666666666666" y="20.666666666666668" width="106.99999999999997" height="22.000000000000004"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIg-FS-3fr">
+                                        <rect key="frame" x="16" y="19" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="7rQ-GW-ayl"/>
+                                            <constraint firstAttribute="width" constant="25" id="9j9-S0-pSX"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="chevron.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xkk-uZ-Cgi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="AppBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="30I-Bb-RLi" firstAttribute="centerX" secondItem="E8I-Kp-UtC" secondAttribute="centerX" id="EMd-rU-jWt"/>
+                                    <constraint firstItem="OIg-FS-3fr" firstAttribute="leading" secondItem="E8I-Kp-UtC" secondAttribute="leading" constant="16" id="U8W-DM-lrf"/>
+                                    <constraint firstItem="30I-Bb-RLi" firstAttribute="centerY" secondItem="E8I-Kp-UtC" secondAttribute="centerY" id="rb0-WH-Zm6"/>
+                                    <constraint firstAttribute="width" secondItem="E8I-Kp-UtC" secondAttribute="height" multiplier="131:20" id="uIW-qB-CGU"/>
+                                    <constraint firstItem="OIg-FS-3fr" firstAttribute="centerY" secondItem="E8I-Kp-UtC" secondAttribute="centerY" id="w6S-i9-XrC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the company that you want to travel." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UX-PW-fX8">
+                                <rect key="frame" x="16" y="71.333333333333329" width="382" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XFu-D4-h8v">
+                                <rect key="frame" x="16" y="106.66666666666669" width="382" height="621.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="bek-S1-4QG">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="AppBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="E8I-Kp-UtC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7cP-3s-h0W"/>
+                            <constraint firstItem="E8I-Kp-UtC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="D1p-rV-fie"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XFu-D4-h8v" secondAttribute="trailing" constant="16" id="MjD-RZ-W8d"/>
+                            <constraint firstItem="E8I-Kp-UtC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="SRv-y3-102"/>
+                            <constraint firstItem="7UX-PW-fX8" firstAttribute="top" secondItem="E8I-Kp-UtC" secondAttribute="bottom" constant="8" id="T5H-yf-ugm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XFu-D4-h8v" secondAttribute="bottom" constant="8" id="XxW-qN-YAd"/>
+                            <constraint firstItem="XFu-D4-h8v" firstAttribute="top" secondItem="7UX-PW-fX8" secondAttribute="bottom" constant="16" id="ci1-Mu-Edn"/>
+                            <constraint firstAttribute="trailing" secondItem="E8I-Kp-UtC" secondAttribute="trailing" id="kTe-gO-PQ4"/>
+                            <constraint firstItem="XFu-D4-h8v" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="l07-Bp-T6X"/>
+                            <constraint firstItem="7UX-PW-fX8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="w5x-ml-1S6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7UX-PW-fX8" secondAttribute="trailing" constant="16" id="x6z-JQ-OJ6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="OIg-FS-3fr" id="aMM-uI-xAU"/>
+                        <outlet property="companySelectCollectionView" destination="XFu-D4-h8v" id="V4f-h0-Ozn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.875" y="-2.112676056338028"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <namedColor name="AppBlueColor">
+            <color red="0.15299999713897705" green="0.37999999523162842" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
