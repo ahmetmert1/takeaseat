@@ -49,6 +49,7 @@ class HomeViewController: UIViewController {
         let dateFormatter = DateFormatter() // date formatlayıcı oluştur
         dateFormatter.dateFormat = "dd.MM.yyyy" // tarih formatı ayarla
         let today = dateFormatter.string(from: date)
+        TakeASeatSingleton.shared.selectedDate = today
         selectDateTextField.text = today
     }
     
@@ -61,6 +62,7 @@ class HomeViewController: UIViewController {
         let dateFormatter = DateFormatter() // date formatlayıcı oluştur
         dateFormatter.dateFormat = "dd.MM.yyyy" // tarih formatı ayarla
         let tomorrowString = dateFormatter.string(from: tomorrow!) // yarının tarihini formatlı şekilde string'e çevir
+        TakeASeatSingleton.shared.selectedDate = tomorrowString
         selectDateTextField.text = tomorrowString
     }
     
@@ -70,7 +72,18 @@ class HomeViewController: UIViewController {
         let companySelectionVC = UIStoryboard(name: "CompanySelect", bundle: nil).instantiateViewController(withIdentifier: "CompanySelectViewController") as! CompanySelectViewController
         
         companySelectionVC.modalPresentationStyle = .fullScreen
-        self.present(companySelectionVC, animated: true)
+        
+        if fromSelectTextField.text == "" || toSelectTextField.text == "" || selectDateTextField.text == "" {
+            
+            let warningPopupVC = UIStoryboard(name: "EmptyFieldPopup", bundle: nil).instantiateViewController(withIdentifier: "EmptyFieldViewController") as! EmptyFieldViewController
+            warningPopupVC.modalPresentationStyle = .custom
+            warningPopupVC.modalTransitionStyle = .crossDissolve
+            self.present(warningPopupVC, animated: true)
+            
+        }else {
+            self.present(companySelectionVC, animated: true)
+        }
+        
         
     }
     
@@ -87,7 +100,7 @@ class HomeViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
         dateFormatter.timeZone = .none
-        
+        TakeASeatSingleton.shared.selectedDate = dateFormatter.string(from: datePickerView.date)
         self.selectDateTextField.text = dateFormatter.string(from: datePickerView.date)
         self.view.endEditing(true)
     }

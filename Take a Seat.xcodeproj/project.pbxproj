@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		754DC312283989E2B5783BA4 /* Pods_Take_a_Seat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C0A5070A051315A09F1A9D /* Pods_Take_a_Seat.framework */; };
+		C40AB60629E6107D00B30C53 /* EmptyFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB60529E6107D00B30C53 /* EmptyFieldViewController.swift */; };
+		C40AB60829E6109B00B30C53 /* EmptyFieldPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB60729E6109B00B30C53 /* EmptyFieldPopup.storyboard */; };
+		C40AB60B29E61AE800B30C53 /* NoSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB60A29E61AE800B30C53 /* NoSeatViewController.swift */; };
+		C40AB60D29E61AF400B30C53 /* NoSeat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB60C29E61AF400B30C53 /* NoSeat.storyboard */; };
+		C40AB61029E61DBE00B30C53 /* PassengerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB60F29E61DBE00B30C53 /* PassengerInfo.storyboard */; };
+		C40AB61229E61DCA00B30C53 /* PassengerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB61129E61DCA00B30C53 /* PassengerInfoViewController.swift */; };
 		C460724229DCC43900789883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724129DCC43900789883 /* AppDelegate.swift */; };
 		C460724429DCC43900789883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724329DCC43900789883 /* SceneDelegate.swift */; };
 		C460724929DCC43900789883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460724729DCC43900789883 /* Main.storyboard */; };
@@ -42,6 +48,12 @@
 
 /* Begin PBXFileReference section */
 		632BC94768393DC392AE16DE /* Pods-Take a Seat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take a Seat.debug.xcconfig"; path = "Target Support Files/Pods-Take a Seat/Pods-Take a Seat.debug.xcconfig"; sourceTree = "<group>"; };
+		C40AB60529E6107D00B30C53 /* EmptyFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFieldViewController.swift; sourceTree = "<group>"; };
+		C40AB60729E6109B00B30C53 /* EmptyFieldPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmptyFieldPopup.storyboard; sourceTree = "<group>"; };
+		C40AB60A29E61AE800B30C53 /* NoSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSeatViewController.swift; sourceTree = "<group>"; };
+		C40AB60C29E61AF400B30C53 /* NoSeat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoSeat.storyboard; sourceTree = "<group>"; };
+		C40AB60F29E61DBE00B30C53 /* PassengerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PassengerInfo.storyboard; sourceTree = "<group>"; };
+		C40AB61129E61DCA00B30C53 /* PassengerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerInfoViewController.swift; sourceTree = "<group>"; };
 		C460723E29DCC43900789883 /* Take a Seat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take a Seat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C460724129DCC43900789883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C460724329DCC43900789883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +119,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C40AB60429E6105900B30C53 /* WarningPopup */ = {
+			isa = PBXGroup;
+			children = (
+				C40AB60529E6107D00B30C53 /* EmptyFieldViewController.swift */,
+				C40AB60729E6109B00B30C53 /* EmptyFieldPopup.storyboard */,
+			);
+			path = WarningPopup;
+			sourceTree = "<group>";
+		};
+		C40AB60929E61ACF00B30C53 /* WarningPopup */ = {
+			isa = PBXGroup;
+			children = (
+				C40AB60A29E61AE800B30C53 /* NoSeatViewController.swift */,
+				C40AB60C29E61AF400B30C53 /* NoSeat.storyboard */,
+			);
+			path = WarningPopup;
+			sourceTree = "<group>";
+		};
+		C40AB60E29E61D6500B30C53 /* Passenger Info Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C40AB60F29E61DBE00B30C53 /* PassengerInfo.storyboard */,
+				C40AB61129E61DCA00B30C53 /* PassengerInfoViewController.swift */,
+			);
+			path = "Passenger Info Screen";
+			sourceTree = "<group>";
+		};
 		C460723529DCC43900789883 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +179,7 @@
 		C4A9001729E5987F007829DA /* Select Seat Screen */ = {
 			isa = PBXGroup;
 			children = (
+				C40AB60929E61ACF00B30C53 /* WarningPopup */,
 				C4A9001829E59894007829DA /* SelectSeat.storyboard */,
 				C4A9001A29E598A6007829DA /* SelectSeatViewController.swift */,
 				C4A9001C29E5A365007829DA /* MockSeatCreater.swift */,
@@ -193,6 +233,7 @@
 		C4C473D329DDDA2F00C403A2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C40AB60E29E61D6500B30C53 /* Passenger Info Screen */,
 				C4B45D8729DE9EAF00CC003A /* Models */,
 				C460724129DCC43900789883 /* AppDelegate.swift */,
 				C460724329DCC43900789883 /* SceneDelegate.swift */,
@@ -227,6 +268,7 @@
 		C4C473D629DDDA5C00C403A2 /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
+				C40AB60429E6105900B30C53 /* WarningPopup */,
 				C4B45D7F29DE185200CC003A /* Home.storyboard */,
 				C4B45D8329DE187200CC003A /* HomeViewController.swift */,
 			);
@@ -304,14 +346,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C460724E29DCC43C00789883 /* LaunchScreen.storyboard in Resources */,
+				C40AB60D29E61AF400B30C53 /* NoSeat.storyboard in Resources */,
 				C460724B29DCC43C00789883 /* Assets.xcassets in Resources */,
 				C4A9001929E59894007829DA /* SelectSeat.storyboard in Resources */,
 				C4B45D9B29E32EBB00CC003A /* CompanySelectCollectionViewCell.xib in Resources */,
+				C40AB60829E6109B00B30C53 /* EmptyFieldPopup.storyboard in Resources */,
 				C4B45D9629E32B9E00CC003A /* CompanySelect.storyboard in Resources */,
 				C460724929DCC43900789883 /* Main.storyboard in Resources */,
 				C4B45D8029DE185200CC003A /* Home.storyboard in Resources */,
 				C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */,
 				C4B45D7C29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib in Resources */,
+				C40AB61029E61DBE00B30C53 /* PassengerInfo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,16 +418,19 @@
 				C4B45D7329DE00E700CC003A /* OnboardingViewController.swift in Sources */,
 				C4B45D8429DE187200CC003A /* HomeViewController.swift in Sources */,
 				C460724429DCC43900789883 /* SceneDelegate.swift in Sources */,
+				C40AB60629E6107D00B30C53 /* EmptyFieldViewController.swift in Sources */,
 				C4B45D8D29DE9F2000CC003A /* DateModel.swift in Sources */,
 				C4A9001F29E5A391007829DA /* ExampleSeatConfig.swift in Sources */,
 				C4A9001D29E5A365007829DA /* MockSeatCreater.swift in Sources */,
 				C4B45D7E29DE0CA800CC003A /* OnboardingCVCellModel.swift in Sources */,
 				C4B45D8B29DE9F0F00CC003A /* PassengerModel.swift in Sources */,
 				C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */,
+				C40AB60B29E61AE800B30C53 /* NoSeatViewController.swift in Sources */,
 				C4B45D8929DE9EC200CC003A /* TicketModel.swift in Sources */,
 				C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */,
 				C4B45D7B29DE0A4E00CC003A /* OnboardingCollectionViewCell.swift in Sources */,
 				C4B45D9A29E32EBB00CC003A /* CompanySelectCollectionViewCell.swift in Sources */,
+				C40AB61229E61DCA00B30C53 /* PassengerInfoViewController.swift in Sources */,
 				C4B45D9129DF0E5E00CC003A /* Extensions.swift in Sources */,
 				C4A9001B29E598A6007829DA /* SelectSeatViewController.swift in Sources */,
 			);

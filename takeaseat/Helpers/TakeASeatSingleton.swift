@@ -23,6 +23,7 @@ class TakeASeatSingleton {
     
     var fromCity = ""
     var toCity = ""
+    var selectedDate = ""
     
     
     

@@ -33,7 +33,7 @@ extension SeatDataManager: ALBusSeatViewDelegate {
                   seatType: ALBusSeatType, selectionType: ALSelectionType) {
         
         
-        if selectedSeatlist.count < selectedMaxSeatCount {
+        if selectedSeatlist.count < maxSeatCount {
             var stub = seatList[indexPath.section][indexPath.item]
             stub.gender = selectionType == .man ? true : false
             selectedSeatlist.append(stub)
