@@ -37,13 +37,11 @@ Bu uygulamanın amacı Api'den gelen pokemon verilerini bir liste şeklinde gös
 
 
 ## Nasıl Kurulur?
-Projeyi direkt olarak indirip <b>Pokedex.xcodeproj</b> dosyasını açtıktan sonra emülatörünüzde çalıştırabilirsiniz.
+Projeyi Xcode ile clone ettikten sonra, proje klasöründe "pod install" komutunu terminal üzerinde çalıştırdıktan sonra .xcworkspace dosyası ile projeyi açabilirsiniz.
  
 # 💻 Teknolojiler 
 - Swift
-- SwiftUI
-- Firebase
-- Analytics - Remote Config - Events
+- ALBusSeatView
 
 
 
