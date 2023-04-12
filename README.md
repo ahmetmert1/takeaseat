@@ -5,7 +5,7 @@
 <img src="takeaseatsources/takeaseatlogofinal.png"  width="250" height="250">
 </p>
 <p align="center">
-<img src="Screenshots/firebaselogo.png" width="250" height="80">
+<img src="takeaseatsources/takeaseatAppName.png" width="250" height="80">
 </p>
 
 Kullanilan Api : https://pokeapi.co/api/v2/pokemon
@@ -21,12 +21,12 @@ Bu uygulamanın amacı Api'den gelen pokemon verilerini bir liste şeklinde gös
 <li> Temel eventler console üzerinden raporlanmaktadır.</br></li>
 </ul>
 <p align="center">
-<img src="Screenshots/kayitGif.gif" width="250" height="550">
+<img src="takeaseatsources/takeaseatAppFlow.gif" width="250" height="550">
 </p>
 
 
 <p align="center">
-<img src="Screenshots/Apple iPhone 11 Pro Max Screenshot 1.png" width="250" height="550"> <img src="Screenshots/Apple iPhone 11 Pro Max Screenshot 2.png" width="250" height="550"> <img src="Screenshots/Apple iPhone 11 Pro Max Screenshot 3.png" width="250" height="550">
+<img src="takeaseatsources/screen1.png" width="250" height="550"> <img src="takeaseatsources/screen2.png" width="250" height="550"> <img src="takeaseatsources/screen3.png" width="250" height="550">
 </p>
 
 
