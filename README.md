@@ -2,7 +2,7 @@
 
 <b>Pokemon Api'si kullanılarak, SwiftUI ile yapılmış olup Api'deki belirli pokemon verilerini çeken, çekilen veriler üzerinde arama yapabilen bir uygulamadır.</b>
 <p align="center">
-<img src="takeaseatsources/takeaseatlogofinal.png">
+<img src="takeaseatsources/takeaseatlogofinal.png"  width="250" height="250">
 </p>
 <p align="center">
 <img src="Screenshots/firebaselogo.png" width="250" height="80">
