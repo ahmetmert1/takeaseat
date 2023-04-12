@@ -1,6 +1,6 @@
 # Take a Seat
 
-<b>Take a Seat, UIKit ile yapılmış olup kullanıcının kalkış ve varış noktasını seçip, kendine uygun seferi bulup, o seferde maksimim 5 adet olacak şekilde koltuk seçebildiği ve bu girdiler doğrultunda belirli sefer için bilet oluşturabildiği bir mobil uygulamadır.</b>
+<b>Take a Seat, UIKit ile yapılmış olup kullanıcının temel bir bilet satın alma uygulamasında bulunan özellikleri yerine getiren bir mobil uygulamadır.</b>
 <p align="center">
 <img src="takeaseatsources/takeaseatlogofinal.png"  width="250" height="250">
 </p>
@@ -11,13 +11,12 @@
 Kullanilan Api : https://pokeapi.co/api/v2/pokemon
 
 ## Uygulamanın Amacı
-Bu uygulamanın amacı Take a Seat, UIKit ile yapılmış olup kullanıcının kalkış ve varış noktasını seçip, kendine uygun seferi bulup, o seferde maksimim 5 adet olacak şekilde koltuk seçebildiği ve bu girdiler doğrultunda belirli sefer için bilet oluşturabildiği bir mobil uygulamadır.
+Bu uygulamanın amacı kullanıcının kalkış ve varış noktasını seçip, kendine uygun seferi bulup, o seferde maksimim 5 adet olacak şekilde koltuk seçebildiği ve bu girdiler doğrultunda belirli sefer için bilet oluşturabilmektir. Ardından bu bileti bilet geçmişi sayfasında görüntüleyebilmektir.
 <ul>
-<li> Infinite Scroll Kullanılmıştır.</br></li>
-<li> Arama yapılan pokemon dinamik olarak güncellenmektedir. </li>
-<li> Firebase ile Remote Config sağlanarak arkaplan rengi değişebilmektedir.</br></li>
-<li> Crashliytcs ile çökmeler raporlanmaktadır.</br></li>
-<li> Temel eventler console üzerinden raporlanmaktadır.</br></li>
+<li> Storyboard kullanılmıştır.</br></li>
+<li> Oluşturulan bilet cihaza local şekilde kaydedilmektedir. </li>
+<li> ALBusSeat ile koltuk seçme işlemi gerçekleştirilmiştir.</br></li>
+
 </ul>
 <p align="center">
 <img src="takeaseatsources/takeaseatAppFlow.gif" width="250" height="550">
