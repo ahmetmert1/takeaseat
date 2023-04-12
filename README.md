@@ -1,6 +1,6 @@
 # Take a Seat
 
-<b>Pokemon Api'si kullanılarak, SwiftUI ile yapılmış olup Api'deki belirli pokemon verilerini çeken, çekilen veriler üzerinde arama yapabilen bir uygulamadır.</b>
+<b>Take a Seat, UIKit ile yapılmış olup kullanıcının kalkış ve varış noktasını seçip, kendine uygun seferi bulup, o seferde maksimim 5 adet olacak şekilde koltuk seçebildiği ve bu girdiler doğrultunda belirli sefer için bilet oluşturabildiği bir mobil uygulamadır.</b>
 <p align="center">
 <img src="takeaseatsources/takeaseatlogofinal.png"  width="250" height="250">
 </p>
@@ -11,8 +11,7 @@
 Kullanilan Api : https://pokeapi.co/api/v2/pokemon
 
 ## Uygulamanın Amacı
-Bu uygulamanın amacı Api'den gelen pokemon verilerini bir liste şeklinde gösterip, aranılan ya da istenilen pokemonu bulup belirli verilerini göstermektir.
-
+Bu uygulamanın amacı Take a Seat, UIKit ile yapılmış olup kullanıcının kalkış ve varış noktasını seçip, kendine uygun seferi bulup, o seferde maksimim 5 adet olacak şekilde koltuk seçebildiği ve bu girdiler doğrultunda belirli sefer için bilet oluşturabildiği bir mobil uygulamadır.
 <ul>
 <li> Infinite Scroll Kullanılmıştır.</br></li>
 <li> Arama yapılan pokemon dinamik olarak güncellenmektedir. </li>
