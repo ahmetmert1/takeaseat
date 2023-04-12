@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ticket List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TicketListViewController" id="Y6W-OH-hqX" customClass="TicketListViewController" customModule="Take_a_Seat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ia-Pv-lKQ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a Seat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWm-TB-HXs">
+                                        <rect key="frame" x="143" y="19" width="107" height="22"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdT-dn-GAL">
+                                        <rect key="frame" x="16" y="17.666666666666671" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="oWB-hE-KE7"/>
+                                            <constraint firstAttribute="height" constant="25" id="pL3-jS-Kh4"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="chevron.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="szV-Uj-GBn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="AppBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="bdT-dn-GAL" firstAttribute="centerY" secondItem="9ia-Pv-lKQ" secondAttribute="centerY" id="AUG-EN-fuW"/>
+                                    <constraint firstItem="YWm-TB-HXs" firstAttribute="centerY" secondItem="9ia-Pv-lKQ" secondAttribute="centerY" id="KQB-mE-qXV"/>
+                                    <constraint firstAttribute="width" secondItem="9ia-Pv-lKQ" secondAttribute="height" multiplier="131:20" id="fW7-1X-QhT"/>
+                                    <constraint firstItem="bdT-dn-GAL" firstAttribute="leading" secondItem="9ia-Pv-lKQ" secondAttribute="leading" constant="16" id="i0K-hM-TNq"/>
+                                    <constraint firstItem="YWm-TB-HXs" firstAttribute="centerX" secondItem="9ia-Pv-lKQ" secondAttribute="centerX" id="jIZ-LI-LuL"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jL0-aM-H0s">
+                                <rect key="frame" x="16" y="135" width="361" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="iOA-tO-ISC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zOo-LD-mGx">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7rg-EI-ViO">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="AppBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="jL0-aM-H0s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="D0A-kf-VBq"/>
+                            <constraint firstItem="9ia-Pv-lKQ" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="LFe-qf-ZdN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jL0-aM-H0s" secondAttribute="trailing" constant="16" id="amN-uJ-T3K"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jL0-aM-H0s" secondAttribute="bottom" constant="16" id="dOj-fO-8VY"/>
+                            <constraint firstItem="jL0-aM-H0s" firstAttribute="top" secondItem="9ia-Pv-lKQ" secondAttribute="bottom" constant="16" id="lQJ-PY-zAF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9ia-Pv-lKQ" secondAttribute="trailing" id="pYL-Dh-eck"/>
+                            <constraint firstItem="9ia-Pv-lKQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="vDS-uY-oe2"/>
+                            <constraint firstItem="9ia-Pv-lKQ" firstAttribute="width" secondItem="9ia-Pv-lKQ" secondAttribute="height" multiplier="131:20" id="wxB-bI-zAP"/>
+                            <constraint firstItem="9ia-Pv-lKQ" firstAttribute="width" secondItem="9ia-Pv-lKQ" secondAttribute="height" multiplier="131:20" id="ycI-YX-fda"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="historyTicketsCollectionView" destination="jL0-aM-H0s" id="ypw-p3-gdj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <namedColor name="AppBlueColor">
+            <color red="0.15299999713897705" green="0.37999999523162842" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

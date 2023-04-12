@@ -50,6 +50,7 @@ class PassengerInfoViewController: UIViewController {
             ticketPageVC.passengerEmail = emailField.text
             ticketPageVC.passengerSurname = surnameField.text
             ticketPageVC.passengerPhoneNumber = phoneNumberField.text
+            ticketPageVC.ticketPrice = "\(dataManager.selectedSeatlist.count * 250) ₺"
             
             self.present(ticketPageVC, animated: true)
             

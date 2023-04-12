@@ -16,6 +16,11 @@
 		C40AB61229E61DCA00B30C53 /* PassengerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB61129E61DCA00B30C53 /* PassengerInfoViewController.swift */; };
 		C40AB61529E6856D00B30C53 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB61429E6856D00B30C53 /* TicketViewController.swift */; };
 		C40AB61729E6857400B30C53 /* Ticket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB61629E6857400B30C53 /* Ticket.storyboard */; };
+		C40AB61929E690D800B30C53 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB61829E690D700B30C53 /* TicketModel.swift */; };
+		C40AB61C29E693DF00B30C53 /* TicketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB61B29E693DF00B30C53 /* TicketListViewController.swift */; };
+		C40AB61E29E693ED00B30C53 /* TicketList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB61D29E693ED00B30C53 /* TicketList.storyboard */; };
+		C40AB62229E6947B00B30C53 /* HistoryTicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB62029E6947B00B30C53 /* HistoryTicketCollectionViewCell.swift */; };
+		C40AB62329E6947B00B30C53 /* HistoryTicketCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40AB62129E6947B00B30C53 /* HistoryTicketCollectionViewCell.xib */; };
 		C460724229DCC43900789883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724129DCC43900789883 /* AppDelegate.swift */; };
 		C460724429DCC43900789883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724329DCC43900789883 /* SceneDelegate.swift */; };
 		C460724929DCC43900789883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460724729DCC43900789883 /* Main.storyboard */; };
@@ -34,7 +39,7 @@
 		C4B45D8029DE185200CC003A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B45D7F29DE185200CC003A /* Home.storyboard */; };
 		C4B45D8429DE187200CC003A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8329DE187200CC003A /* HomeViewController.swift */; };
 		C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8529DE1A5F00CC003A /* OnboardingPromptModel.swift */; };
-		C4B45D8929DE9EC200CC003A /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8829DE9EC200CC003A /* TicketModel.swift */; };
+		C4B45D8929DE9EC200CC003A /* OldTicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8829DE9EC200CC003A /* OldTicketModel.swift */; };
 		C4B45D8B29DE9F0F00CC003A /* PassengerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */; };
 		C4B45D8D29DE9F2000CC003A /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8C29DE9F2000CC003A /* DateModel.swift */; };
 		C4B45D8F29DE9F3F00CC003A /* HourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B45D8E29DE9F3F00CC003A /* HourModel.swift */; };
@@ -58,6 +63,11 @@
 		C40AB61129E61DCA00B30C53 /* PassengerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerInfoViewController.swift; sourceTree = "<group>"; };
 		C40AB61429E6856D00B30C53 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		C40AB61629E6857400B30C53 /* Ticket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ticket.storyboard; sourceTree = "<group>"; };
+		C40AB61829E690D700B30C53 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		C40AB61B29E693DF00B30C53 /* TicketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListViewController.swift; sourceTree = "<group>"; };
+		C40AB61D29E693ED00B30C53 /* TicketList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketList.storyboard; sourceTree = "<group>"; };
+		C40AB62029E6947B00B30C53 /* HistoryTicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTicketCollectionViewCell.swift; sourceTree = "<group>"; };
+		C40AB62129E6947B00B30C53 /* HistoryTicketCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTicketCollectionViewCell.xib; sourceTree = "<group>"; };
 		C460723E29DCC43900789883 /* Take a Seat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take a Seat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C460724129DCC43900789883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C460724329DCC43900789883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +88,7 @@
 		C4B45D7F29DE185200CC003A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C4B45D8329DE187200CC003A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4B45D8529DE1A5F00CC003A /* OnboardingPromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPromptModel.swift; sourceTree = "<group>"; };
-		C4B45D8829DE9EC200CC003A /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		C4B45D8829DE9EC200CC003A /* OldTicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldTicketModel.swift; sourceTree = "<group>"; };
 		C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerModel.swift; sourceTree = "<group>"; };
 		C4B45D8C29DE9F2000CC003A /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		C4B45D8E29DE9F3F00CC003A /* HourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourModel.swift; sourceTree = "<group>"; };
@@ -155,8 +165,28 @@
 			children = (
 				C40AB61429E6856D00B30C53 /* TicketViewController.swift */,
 				C40AB61629E6857400B30C53 /* Ticket.storyboard */,
+				C40AB61829E690D700B30C53 /* TicketModel.swift */,
 			);
 			path = "Ticket Screen";
+			sourceTree = "<group>";
+		};
+		C40AB61A29E693BE00B30C53 /* Ticket List Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C40AB61F29E6944200B30C53 /* TicketCell */,
+				C40AB61B29E693DF00B30C53 /* TicketListViewController.swift */,
+				C40AB61D29E693ED00B30C53 /* TicketList.storyboard */,
+			);
+			path = "Ticket List Screen";
+			sourceTree = "<group>";
+		};
+		C40AB61F29E6944200B30C53 /* TicketCell */ = {
+			isa = PBXGroup;
+			children = (
+				C40AB62029E6947B00B30C53 /* HistoryTicketCollectionViewCell.swift */,
+				C40AB62129E6947B00B30C53 /* HistoryTicketCollectionViewCell.xib */,
+			);
+			path = TicketCell;
 			sourceTree = "<group>";
 		};
 		C460723529DCC43900789883 = {
@@ -215,7 +245,7 @@
 		C4B45D8729DE9EAF00CC003A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C4B45D8829DE9EC200CC003A /* TicketModel.swift */,
+				C4B45D8829DE9EC200CC003A /* OldTicketModel.swift */,
 				C4B45D8A29DE9F0F00CC003A /* PassengerModel.swift */,
 				C4B45D8C29DE9F2000CC003A /* DateModel.swift */,
 				C4B45D8E29DE9F3F00CC003A /* HourModel.swift */,
@@ -246,6 +276,7 @@
 		C4C473D329DDDA2F00C403A2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C40AB61A29E693BE00B30C53 /* Ticket List Screen */,
 				C40AB61329E6853D00B30C53 /* Ticket Screen */,
 				C40AB60E29E61D6500B30C53 /* Passenger Info Screen */,
 				C4B45D8729DE9EAF00CC003A /* Models */,
@@ -363,11 +394,13 @@
 				C40AB60D29E61AF400B30C53 /* NoSeat.storyboard in Resources */,
 				C460724B29DCC43C00789883 /* Assets.xcassets in Resources */,
 				C4A9001929E59894007829DA /* SelectSeat.storyboard in Resources */,
+				C40AB61E29E693ED00B30C53 /* TicketList.storyboard in Resources */,
 				C4B45D9B29E32EBB00CC003A /* CompanySelectCollectionViewCell.xib in Resources */,
 				C40AB60829E6109B00B30C53 /* EmptyFieldPopup.storyboard in Resources */,
 				C4B45D9629E32B9E00CC003A /* CompanySelect.storyboard in Resources */,
 				C460724929DCC43900789883 /* Main.storyboard in Resources */,
 				C4B45D8029DE185200CC003A /* Home.storyboard in Resources */,
+				C40AB62329E6947B00B30C53 /* HistoryTicketCollectionViewCell.xib in Resources */,
 				C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */,
 				C40AB61729E6857400B30C53 /* Ticket.storyboard in Resources */,
 				C4B45D7C29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib in Resources */,
@@ -442,9 +475,12 @@
 				C4B45D8B29DE9F0F00CC003A /* PassengerModel.swift in Sources */,
 				C4B45D8629DE1A5F00CC003A /* OnboardingPromptModel.swift in Sources */,
 				C40AB60B29E61AE800B30C53 /* NoSeatViewController.swift in Sources */,
-				C4B45D8929DE9EC200CC003A /* TicketModel.swift in Sources */,
+				C4B45D8929DE9EC200CC003A /* OldTicketModel.swift in Sources */,
 				C4D70C8429DCD49600CDEC19 /* Constants.swift in Sources */,
 				C4B45D7B29DE0A4E00CC003A /* OnboardingCollectionViewCell.swift in Sources */,
+				C40AB62229E6947B00B30C53 /* HistoryTicketCollectionViewCell.swift in Sources */,
+				C40AB61929E690D800B30C53 /* TicketModel.swift in Sources */,
+				C40AB61C29E693DF00B30C53 /* TicketListViewController.swift in Sources */,
 				C4B45D9A29E32EBB00CC003A /* CompanySelectCollectionViewCell.swift in Sources */,
 				C40AB61229E61DCA00B30C53 /* PassengerInfoViewController.swift in Sources */,
 				C4B45D9129DF0E5E00CC003A /* Extensions.swift in Sources */,

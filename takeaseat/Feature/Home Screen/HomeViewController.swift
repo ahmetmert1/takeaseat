@@ -53,6 +53,15 @@ class HomeViewController: UIViewController {
         selectDateTextField.text = today
     }
     
+    @IBAction func seeAllHistoryTicketsPressed(_ sender: Any) {
+        
+        let allTicketVC = UIStoryboard(name: "TicketList", bundle: nil).instantiateViewController(withIdentifier: "TicketListViewController") as! TicketListViewController
+        
+        allTicketVC.modalPresentationStyle = .fullScreen
+        
+        self.present(allTicketVC, animated: true)
+        
+    }
     
     @IBAction func tomorrowButtonPressed(_ sender: Any) {
         let calendar = Calendar.current // mevcut takvimi al
