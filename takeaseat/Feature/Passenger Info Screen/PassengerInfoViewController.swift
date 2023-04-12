@@ -42,6 +42,17 @@ class PassengerInfoViewController: UIViewController {
             
         }else{
             //go to ticket page
+            
+            var ticketPageVC = UIStoryboard(name: "Ticket", bundle: nil).instantiateViewController(withIdentifier: "TicketViewController") as! TicketViewController
+            ticketPageVC.modalPresentationStyle = .fullScreen
+            ticketPageVC.dataManager = self.dataManager
+            ticketPageVC.passengerName = nameField.text
+            ticketPageVC.passengerEmail = emailField.text
+            ticketPageVC.passengerSurname = surnameField.text
+            ticketPageVC.passengerPhoneNumber = phoneNumberField.text
+            
+            self.present(ticketPageVC, animated: true)
+            
         }
         
     }

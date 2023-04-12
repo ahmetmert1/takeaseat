@@ -14,6 +14,8 @@
 		C40AB60D29E61AF400B30C53 /* NoSeat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB60C29E61AF400B30C53 /* NoSeat.storyboard */; };
 		C40AB61029E61DBE00B30C53 /* PassengerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB60F29E61DBE00B30C53 /* PassengerInfo.storyboard */; };
 		C40AB61229E61DCA00B30C53 /* PassengerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB61129E61DCA00B30C53 /* PassengerInfoViewController.swift */; };
+		C40AB61529E6856D00B30C53 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AB61429E6856D00B30C53 /* TicketViewController.swift */; };
+		C40AB61729E6857400B30C53 /* Ticket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40AB61629E6857400B30C53 /* Ticket.storyboard */; };
 		C460724229DCC43900789883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724129DCC43900789883 /* AppDelegate.swift */; };
 		C460724429DCC43900789883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460724329DCC43900789883 /* SceneDelegate.swift */; };
 		C460724929DCC43900789883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460724729DCC43900789883 /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		C40AB60C29E61AF400B30C53 /* NoSeat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoSeat.storyboard; sourceTree = "<group>"; };
 		C40AB60F29E61DBE00B30C53 /* PassengerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PassengerInfo.storyboard; sourceTree = "<group>"; };
 		C40AB61129E61DCA00B30C53 /* PassengerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerInfoViewController.swift; sourceTree = "<group>"; };
+		C40AB61429E6856D00B30C53 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		C40AB61629E6857400B30C53 /* Ticket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ticket.storyboard; sourceTree = "<group>"; };
 		C460723E29DCC43900789883 /* Take a Seat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take a Seat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C460724129DCC43900789883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C460724329DCC43900789883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 			path = "Passenger Info Screen";
 			sourceTree = "<group>";
 		};
+		C40AB61329E6853D00B30C53 /* Ticket Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C40AB61429E6856D00B30C53 /* TicketViewController.swift */,
+				C40AB61629E6857400B30C53 /* Ticket.storyboard */,
+			);
+			path = "Ticket Screen";
+			sourceTree = "<group>";
+		};
 		C460723529DCC43900789883 = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 		C4C473D329DDDA2F00C403A2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C40AB61329E6853D00B30C53 /* Ticket Screen */,
 				C40AB60E29E61D6500B30C53 /* Passenger Info Screen */,
 				C4B45D8729DE9EAF00CC003A /* Models */,
 				C460724129DCC43900789883 /* AppDelegate.swift */,
@@ -355,6 +369,7 @@
 				C460724929DCC43900789883 /* Main.storyboard in Resources */,
 				C4B45D8029DE185200CC003A /* Home.storyboard in Resources */,
 				C4C473D929DDDDB100C403A2 /* Onboarding.storyboard in Resources */,
+				C40AB61729E6857400B30C53 /* Ticket.storyboard in Resources */,
 				C4B45D7C29DE0A4E00CC003A /* OnboardingCollectionViewCell.xib in Resources */,
 				C40AB61029E61DBE00B30C53 /* PassengerInfo.storyboard in Resources */,
 			);
@@ -410,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C460724229DCC43900789883 /* AppDelegate.swift in Sources */,
+				C40AB61529E6856D00B30C53 /* TicketViewController.swift in Sources */,
 				C4A9002129E5A3AE007829DA /* SeatDataManager.swift in Sources */,
 				C4B45D9D29E3385100CC003A /* CompanySelectCellModel.swift in Sources */,
 				C4B45D8F29DE9F3F00CC003A /* HourModel.swift in Sources */,

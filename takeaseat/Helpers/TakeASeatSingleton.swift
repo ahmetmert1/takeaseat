@@ -24,6 +24,7 @@ class TakeASeatSingleton {
     var fromCity = ""
     var toCity = ""
     var selectedDate = ""
+    var selectedCompany : CompanySelectCellModel?
     
     
     

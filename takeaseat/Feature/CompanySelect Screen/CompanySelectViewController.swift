@@ -75,6 +75,7 @@ extension CompanySelectViewController : UICollectionViewDataSource, UICollection
         let seatPageVC = UIStoryboard(name: "SelectSeat", bundle: nil).instantiateViewController(withIdentifier: "SelectSeatViewController") as! SelectSeatViewController
         seatPageVC.modalPresentationStyle = .fullScreen
         seatPageVC.selectedCompany = companyArray[indexPath.row]
+        TakeASeatSingleton.shared.selectedCompany = companyArray[indexPath.row]
         self.present(seatPageVC, animated: true)
         
     }
