@@ -8,7 +8,6 @@
 <img src="takeaseatsources/takeaseatAppName.png" width="250" height="80">
 </p>
 
-Kullanilan Api : https://pokeapi.co/api/v2/pokemon
 
 ## Uygulamanın Amacı
 Bu uygulamanın amacı kullanıcının kalkış ve varış noktasını seçip, kendine uygun seferi bulup, o seferde maksimim 5 adet olacak şekilde koltuk seçebildiği ve bu girdiler doğrultunda belirli sefer için bilet oluşturabilmektir. Ardından bu bileti bilet geçmişi sayfasında görüntüleyebilmektir.
